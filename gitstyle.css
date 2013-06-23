@@ -40,7 +40,7 @@ header {
 	float: left;
 }
 
-#search {
+.search {
 	width: 200px;
 	height: 20px;
 	float: left;
@@ -50,6 +50,11 @@ header {
 	padding-left: 5px;
 	font-size: 12px;
 	border: 1px solid #ccc;
+	transition: width .5s ease;
+}
+
+.search.extend-width {
+	width: 375px;
 }
 
 #icon-cog{
@@ -62,6 +67,16 @@ header {
 /* ----- Nav CSS ----- */
 nav {
 	float: right;
+
+}
+
+.nav-menu{
+	transition: opacity 0.25s ease;
+}
+
+
+.hide {
+	opacity: 0;
 }
 
 nav a{
